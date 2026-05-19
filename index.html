@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Friends - The Ultimate Co-op Experience</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0b0c10;
+            color: #c5c6c7;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Utility Classes */
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #66fcf1 0%, #45a29e 100%);
+            color: #0b0c10;
+            padding: 0.8rem 2.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(102, 252, 241, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 252, 241, 0.5);
+        }
+
+        /* Navbar */
+        header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #66fcf1;
+            letter-spacing: 1px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 6rem 0;
+            background: radial-gradient(circle at center, rgba(102, 252, 241, 0.1) 0%, transparent 70%);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: #fff;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 600px;
+            margin: 0 auto 2.5rem auto;
+            color: #c5c6c7;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 4rem 0;
+            background-color: #1f2833;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: #0b0c10;
+            padding: 2.5rem;
+            border-radius: 10px;
+            border: 1px solid rgba(102, 252, 241, 0.1);
+            text-align: center;
+            transition: border 0.3s;
+        }
+
+        .card:hover {
+            border-color: #66fcf1;
+        }
+
+        .card h3 {
+            color: #66fcf1;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Call To Action Section */
+        .cta {
+            text-align: center;
+            padding: 6rem 0;
+        }
+
+        .cta h2 {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta p {
+            margin-bottom: 2.5rem;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #45a29e;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.8rem; }
+            .hero p { font-size: 1.2rem; }
+            .cta h2 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">BEST FRIENDS</div>
+                <a href="#" class="btn" style="padding: 0.5rem 1.5rem; font-size: 1rem;">Play Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Some bonds can't be broken.</h1>
+            <p>Grab your closest ally and dive into a world where survival depends entirely on your friendship. Will you make it out together?</p>
+            <a href="#" class="btn">Play the Game</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why You'll Love It</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>True Co-op Gameplay</h3>
+                    <p>You can't do this alone. Literally. Every puzzle and challenge requires perfect synchronization with your partner.</p>
+                </div>
+                <div class="card">
+                    <h3>Epic Adventures</h3>
+                    <p>Explore breathtaking landscapes and face daunting obstacles specifically designed to test the strength of your bond.</p>
+                </div>
+                <div class="card">
+                    <h3>Instant Chaos</h3>
+                    <p>Easy to pick up, impossible to master. Prepare for laughs, occasional betrayals, and unforgettable gaming moments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Test Your Friendship?</h2>
+            <p>Best Friends is available to play right now in your browser. No installs, no hassle.</p>
+            <a href="#" class="btn">Launch Game</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Best Friends Game Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
