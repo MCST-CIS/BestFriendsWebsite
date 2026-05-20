@@ -10,7 +10,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!unity-game|sprites|assets|.*\\.).*)",
+      "source": "/:path*",
       "destination": "/index.html"
     }
   ]
